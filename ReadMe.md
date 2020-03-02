@@ -7,6 +7,7 @@ Setting Up
 2.	Download and install Postman at - https://www.postman.com/downloads/
 
   2a. If using Linux follow steps 2a and 2b. Extract the tar.gz file in your chosen location. In the terminal move to the directory with your tar.gz file you downloaded. You can use the command **tar -C /{extract path} -zxvf {yourfile}.tar.gz** to extract your tar file to a chosen extract path. 
+  
   2b - Launch Postman by running - **./{path to your extracted Postman files}/Postman/app/Postman**
   
 3.	Launch Postman and import the **NRL.postman_collection.json file** from the repository. You should see an NRL folder on the left sidebar.
