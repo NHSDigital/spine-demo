@@ -1,0 +1,182 @@
+{
+	"info": {
+		"_postman_id": "783fc8b5-22d2-448c-a464-cbaee7de1ef6",
+		"name": "NRL",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "GET by subject",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyAiYWxnIjoibm9uZSIsICJ0eXAiOiJKV1QifQ==.eyJpc3MiOiAiaHR0cHM6Ly93d3cuZXhhbXBsZS5jb20iLCAic3ViIjogImh0dHBzOi8vZmhpci5uaHMudWsvSWQvc2RzLXJvbGUtcHJvZmlsZS1pZHwyMzQ3NjM0NjM3NiIsICJhdWQiOiAiaHR0cHM6Ly9wc2lzLXN5bmMubmF0aW9uYWwubmNycy5uaHMudWsvRG9jdW1lbnRSZWZlcmVuY2UiLCAiZXhwIjogMTQ2OTQzNjk4NywgImlhdCI6IDE0Njk0MzY2ODcsICJyZWFzb25fZm9yX3JlcXVlc3QiOiAiZGlyZWN0Y2FyZSIsICJzY29wZSI6ICJwYXRpZW50L0RvY3VtZW50UmVmZXJlbmNlLndyaXRlIiwgInJlcXVlc3Rpbmdfc3lzdGVtIjogImh0dHBzOi8vZmhpci5uaHMudWsvSWQvYWNjcmVkaXRlZC1zeXN0ZW18MDc1ODgzNzUwNTQxIiwgInJlcXVlc3Rpbmdfb3JnYW5pemF0aW9uIjogImh0dHBzOi8vZmhpci5uaHMudWsvSWQvb2RzLW9yZ2FuaXphdGlvbi1jb2RlfFNDUkEwMSIsICJyZXF1ZXN0aW5nX3VzZXIiOiAiaHR0cHM6Ly9maGlyLm5ocy51ay9JZC9zZHMtcm9sZS1wcm9maWxlLWlkfDIzNDc2MzQ2Mzc2In0=.",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [
+					{
+						"key": "Accept",
+						"value": "application/fhir+json",
+						"type": "text"
+					},
+					{
+						"key": "fromASID",
+						"value": "075883750541",
+						"type": "text"
+					},
+					{
+						"key": "toASID",
+						"value": "990101234567",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "https://localhost:443/DocumentReference?subject=https://demographics.spineservices.nhs.uk/STU3/Patient/9995000784",
+					"protocol": "https",
+					"host": [
+						"localhost"
+					],
+					"port": "443",
+					"path": [
+						"DocumentReference"
+					],
+					"query": [
+						{
+							"key": "subject",
+							"value": "https://demographics.spineservices.nhs.uk/STU3/Patient/9995000784"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "POST - Create Pointer",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyAiYWxnIjoibm9uZSIsICJ0eXAiOiJKV1QifQ==.eyJpc3MiOiAiaHR0cHM6Ly93d3cuZXhhbXBsZS5jb20iLCAic3ViIjogImh0dHBzOi8vZmhpci5uaHMudWsvSWQvc2RzLXJvbGUtcHJvZmlsZS1pZHwyMzQ3NjM0NjM3NiIsICJhdWQiOiAiaHR0cHM6Ly9wc2lzLXN5bmMubmF0aW9uYWwubmNycy5uaHMudWsvRG9jdW1lbnRSZWZlcmVuY2UiLCAiZXhwIjogMTQ2OTQzNjk4NywgImlhdCI6IDE0Njk0MzY2ODcsICJyZWFzb25fZm9yX3JlcXVlc3QiOiAiZGlyZWN0Y2FyZSIsICJzY29wZSI6ICJwYXRpZW50L0RvY3VtZW50UmVmZXJlbmNlLndyaXRlIiwgInJlcXVlc3Rpbmdfc3lzdGVtIjogImh0dHBzOi8vZmhpci5uaHMudWsvSWQvYWNjcmVkaXRlZC1zeXN0ZW18MDc1ODgzNzUwNTQxIiwgInJlcXVlc3Rpbmdfb3JnYW5pemF0aW9uIjogImh0dHBzOi8vZmhpci5uaHMudWsvSWQvb2RzLW9yZ2FuaXphdGlvbi1jb2RlfFNDUkEwMSIsICJyZXF1ZXN0aW5nX3VzZXIiOiAiaHR0cHM6Ly9maGlyLm5ocy51ay9JZC9zZHMtcm9sZS1wcm9maWxlLWlkfDIzNDc2MzQ2Mzc2In0=.",
+							"type": "string"
+						}
+					]
+				},
+				"method": "POST",
+				"header": [
+					{
+						"key": "Accept",
+						"value": "application/xml",
+						"type": "text"
+					},
+					{
+						"key": "fromASID",
+						"value": "075883750541",
+						"type": "text"
+					},
+					{
+						"key": "toASID",
+						"value": "990101234567",
+						"type": "text"
+					},
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"value": "application/xml",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "<?xml version=\"1.0\" encoding=\"UTF-8\"?>\n<DocumentReference xmlns:fhir=\"http://hl7.org/fhir\" xmlns=\"http://hl7.org/fhir\">\n    <meta>\n        <profile value=\"https://fhir.nhs.uk/STU3/StructureDefinition/NRL-DocumentReference-1\"/>\n    </meta>\n    <status value=\"current\"/>\n    <type>\n        <coding>\n            <system value=\"http://snomed.info/sct\"/>\n            <code value=\"736253002\"/>\n            <display value=\"Mental health crisis plan\"/>\n        </coding>\n    </type>\n    <class>\n        <coding>\n            <system value=\"http://snomed.info/sct\"/>\n            <version value=\"1\"/>\n            <code value=\"734163000\"/>\n            <display value=\"Care plan\"/>\n            <userSelected value=\"true\"/>\n        </coding>\n        <text value=\"Some pertinent text\"/>\n    </class>\n    <subject>\n        <reference value=\"https://demographics.spineservices.nhs.uk/STU3/Patient/9995000784\"/>\n    </subject>\n    <created value=\"2020-03-04T15:26:00+01:00\"/>\n    <indexed value=\"2020-03-04T15:26:01+01:00\"/>\n    <author>\n        <reference value=\"https://directory.spineservices.nhs.uk/STU3/Organization/TESTV349\"/>\n    </author>\n    <custodian>\n        <reference value=\"https://directory.spineservices.nhs.uk/STU3/Organization/SCRA01\"/>\n    </custodian>\n    <content>\n        <attachment>\n            <contentType value=\"text/html\"/>\n            <url value=\"https://rhm-ingleborough.cfh-nic.nhs.uk/Binary/pdf.pdf\"/>\n            <title value=\"Mental health Care Plan Report\"/>\n            <creation value=\"2016-03-08T15:26:00+01:00\"/>\n        </attachment>\n        <format>\n            <system value=\"https://fhir.nhs.uk/STU3/CodeSystem/NRL-FormatCode-1\"/>\n            <code value=\"urn:nhs-ic:unstructured\"/>\n            <display value=\"Unstructured Document\"/>\n        </format>\n        <extension url=\"https://fhir.nhs.uk/STU3/StructureDefinition/Extension-NRL-ContentStability-1\">\n            <valueCodeableConcept>\n                <coding>\n                    <system value=\"https://fhir.nhs.uk/STU3/CodeSystem/NRL-ContentStability-1\"/>\n                    <code value=\"dynamic\"/>\n                    <display value=\"Dynamic\"/>\n                </coding>\n            </valueCodeableConcept>\n        </extension>\n    </content>\n    <context>\n        <practiceSetting>\n            <coding>\n                <system value=\"http://snomed.info/sct\"/>\n                <code value=\"310167005\"/>\n                <display value=\"Urology service\"/>\n            </coding>\n            <text value=\"Some pertinent text\"/>\n        </practiceSetting>\n    </context>\n</DocumentReference>",
+					"options": {
+						"raw": {
+							"language": "xml"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://localhost:443/DocumentReference",
+					"protocol": "https",
+					"host": [
+						"localhost"
+					],
+					"port": "443",
+					"path": [
+						"DocumentReference"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Delete - Remove Pointer",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyAiYWxnIjoibm9uZSIsICJ0eXAiOiJKV1QifQ==.eyJpc3MiOiAiaHR0cHM6Ly93d3cuZXhhbXBsZS5jb20iLCAic3ViIjogImh0dHBzOi8vZmhpci5uaHMudWsvSWQvc2RzLXJvbGUtcHJvZmlsZS1pZHwyMzQ3NjM0NjM3NiIsICJhdWQiOiAiaHR0cHM6Ly9wc2lzLXN5bmMubmF0aW9uYWwubmNycy5uaHMudWsvRG9jdW1lbnRSZWZlcmVuY2UiLCAiZXhwIjogMTQ2OTQzNjk4NywgImlhdCI6IDE0Njk0MzY2ODcsICJyZWFzb25fZm9yX3JlcXVlc3QiOiAiZGlyZWN0Y2FyZSIsICJzY29wZSI6ICJwYXRpZW50L0RvY3VtZW50UmVmZXJlbmNlLndyaXRlIiwgInJlcXVlc3Rpbmdfc3lzdGVtIjogImh0dHBzOi8vZmhpci5uaHMudWsvSWQvYWNjcmVkaXRlZC1zeXN0ZW18MDc1ODgzNzUwNTQxIiwgInJlcXVlc3Rpbmdfb3JnYW5pemF0aW9uIjogImh0dHBzOi8vZmhpci5uaHMudWsvSWQvb2RzLW9yZ2FuaXphdGlvbi1jb2RlfFNDUkEwMSIsICJyZXF1ZXN0aW5nX3VzZXIiOiAiaHR0cHM6Ly9maGlyLm5ocy51ay9JZC9zZHMtcm9sZS1wcm9maWxlLWlkfDIzNDc2MzQ2Mzc2In0=.",
+							"type": "string"
+						}
+					]
+				},
+				"method": "DELETE",
+				"header": [
+					{
+						"key": "Accept",
+						"type": "text",
+						"value": "application/xml"
+					},
+					{
+						"key": "fromASID",
+						"type": "text",
+						"value": "075883750541"
+					},
+					{
+						"key": "toASID",
+						"type": "text",
+						"value": "990101234567"
+					},
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"type": "text",
+						"value": "application/xml"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "",
+					"options": {
+						"raw": {
+							"language": "xml"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://localhost:443/DocumentReference/e495ee34-5891-11ea-8860-00505634b886-5837494f5652574a5355",
+					"protocol": "https",
+					"host": [
+						"localhost"
+					],
+					"port": "443",
+					"path": [
+						"DocumentReference",
+						"e495ee34-5891-11ea-8860-00505634b886-5837494f5652574a5355"
+					]
+				}
+			},
+			"response": []
+		}
+	],
+	"protocolProfileBehavior": {}
+}
