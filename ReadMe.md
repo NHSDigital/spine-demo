@@ -11,7 +11,7 @@ Setting Up
    + 2b - Launch Postman by running - **./{path to your extracted Postman files}/Postman/app/Postman**
  
 3. Launch Postman and click on the **Settings** icon (the wrench in the top right corner). Make sure **SSL certificate verification** is turned **OFF**. 
-4.	Launch Postman and import the **NRL.postman_collection.json file** from the repository. You should see an NRL folder on the left sidebar.
+4.	On Postman click the import button (top left) and import **NRL.postman_collection.json file** from the repository. You should see an NRL folder on the left sidebar.
 5.	Go to the NHS number spreadsheet(https://docs.google.com/spreadsheets/d/1jzXrC_5nWPcoq5n5fhU4qPk-nFtUT9-VIvK-rjW_t2c/edit?usp=sharing). Select your NHS number to use. Copy this somewhere safe and put Y if you’re using it.
 
 **NOTE: Certificate checks have been removed from the server to allow simpler workshop access.**
