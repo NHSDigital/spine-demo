@@ -67,7 +67,7 @@ If you would like to see your pointer on the mobile Summary Care Record Applicat
 
 If you don't get this response please double check your request body and try again. Incorrect spelling or extra spaces could be your issue. Feel free to ask for help or to ask any questions. 
 
-Now you can try to retrive those pointer details, delete it (unless you want to see it on the the Summary Care Record later) or create another pointer for the same or a different NHS number. 
+Now you can try to retrieve those pointer details, delete it (unless you want to see it on the the Summary Care Record later) or create another pointer for the same or a different NHS number. 
 
 
 Retrieve a pointer
