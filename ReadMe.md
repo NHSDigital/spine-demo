@@ -19,7 +19,7 @@ Setting Up
 Create a pointer
 ----------------
 1.	Go to the NRL collection folder in Postman and select the **POST – Create Pointer**.
-2.	Everything has been configured for you apart from the request body.
+2.	Everything has been configured for you apart from the request body. Switch to the **Body** view (this is just under the POST url field) and click the **raw** radio button. This should be empty and will need adding to.
 3.	Choose to use either nrl_create_pointer.xml or the nrl_create_pointer.json template as your request body. Edit the template to use your chosen NHS number in the Subject -> Reference URL value. 
 4. Edit the template to include the type of document for your pointer. Look at type -> coding -> code/display and add one of the below
 code/display values:
@@ -45,7 +45,11 @@ code/display values:
 -	"code": "736253008",
    "description": "Urgent care plan",
 
-5. Change the ending of the POST URL in Postman to use your NHS number you copied earlier e.g. /Patient/{Your Test NHS Number} 
+5. Copy and paste your edited template into the request Body for your POST. Make sure you select the dropdown type to either **XML or JSON** depending on your template.
+
+6. Change the ending of the POST URL in Postman to use your NHS number you copied earlier e.g. /Patient/{Your Test NHS Number} and press Send. Check the response outcome to see if the diagnostic value says "Successfully created resource DocumentReference". If you get this then congratulations you have created your NRL pointer! Now you can try to retrive those pointer details or delete it next.
+
+If you don't get this response please double check your request body and try again. Feel free to ask for help or to ask any questions. 
 
 Retrieve a pointer
 ------------------
