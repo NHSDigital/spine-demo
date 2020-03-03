@@ -9,9 +9,10 @@ Setting Up
    + 2a. If using Linux follow steps 2a and 2b. Extract the tar.gz file in your chosen location. In the terminal move to the directory with your tar.gz file you downloaded. You can use the command **tar -C /{extract path} -zxvf {yourfile}.tar.gz** to extract your tar file to a chosen extract path. 
   
    + 2b - Launch Postman by running - **./{path to your extracted Postman files}/Postman/app/Postman**
-  
-3.	Launch Postman and import the **NRL.postman_collection.json file** from the repository. You should see an NRL folder on the left sidebar.
-4.	Go to the NHS number spreadsheet(https://docs.google.com/spreadsheets/d/1jzXrC_5nWPcoq5n5fhU4qPk-nFtUT9-VIvK-rjW_t2c/edit?usp=sharing). Select your NHS number to use. Copy this somewhere safe and put Y if you’re using it.
+ 
+3. Launch Postman and click on the **Settings** icon (the wrench in the top right corner). Make sure **SSL certificate verification** is turned **OFF**. 
+4.	Launch Postman and import the **NRL.postman_collection.json file** from the repository. You should see an NRL folder on the left sidebar.
+5.	Go to the NHS number spreadsheet(https://docs.google.com/spreadsheets/d/1jzXrC_5nWPcoq5n5fhU4qPk-nFtUT9-VIvK-rjW_t2c/edit?usp=sharing). Select your NHS number to use. Copy this somewhere safe and put Y if you’re using it.
 
 **NOTE: Certificate checks have been removed from the server to allow simpler workshop access.**
 
