@@ -60,7 +60,7 @@ Retrieve a pointer
 Remove a pointer
 ----------------
 1.	Go to the NRL collection folder in Postman and select the **Delete – Remove Pointer**.
-2.	Change the DELETE URL ending to /Patient/{Your Pointer ID}. In order to get the pointer ID see the instructions in Retrieve a pointer and look for your pointer's ID.
+2.	Change the DELETE URL ending to /DocumentReference/{Your Pointer ID}. In order to get the pointer ID see the instructions in Retrieve a pointer and look for your pointer's ID.
 3.	Press Send and look at the response outcome to see if your pointer has been deleted.
 
 
