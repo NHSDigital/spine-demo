@@ -1,6 +1,6 @@
 {
 	"info": {
-		"_postman_id": "ff2b23c7-d073-43b9-bad8-fa58e33b7f69",
+		"_postman_id": "f90d0509-1147-423e-b78d-bcabb6a71bd3",
 		"name": "NRL",
 		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
 	},
@@ -37,7 +37,7 @@
 					}
 				],
 				"url": {
-					"raw": "https://bs32.devspineservices.nhs.uk/DocumentReference?subject=https://demographics.spineservices.nhs.uk/STU3/Patient/9995000784",
+					"raw": "https://bs32.devspineservices.nhs.uk/DocumentReference?subject=https://demographics.spineservices.nhs.uk/STU3/Patient/",
 					"protocol": "https",
 					"host": [
 						"bs32",
@@ -51,7 +51,7 @@
 					"query": [
 						{
 							"key": "subject",
-							"value": "https://demographics.spineservices.nhs.uk/STU3/Patient/9995000784"
+							"value": "https://demographics.spineservices.nhs.uk/STU3/Patient/"
 						}
 					]
 				}
@@ -97,7 +97,7 @@
 				],
 				"body": {
 					"mode": "raw",
-					"raw": "<?xml version=\"1.0\" encoding=\"UTF-8\"?>\n<DocumentReference xmlns:fhir=\"http://hl7.org/fhir\" xmlns=\"http://hl7.org/fhir\">\n\t<meta>\n\t\t<profile value=\"https://fhir.nhs.uk/STU3/StructureDefinition/NRL-DocumentReference-1\"/>\n\t</meta>\n\t<status value=\"current\"/>\n\t<type>\n\t\t<coding>\n\t\t\t<system value=\"http://snomed.info/sct\"/>\n\t\t\t<code value=\"736253002\"/>\n\t\t\t<display value=\"Mental health crisis plan\"/>\n\t\t</coding>\n\t</type>\n\t<class>\n\t\t<coding>\n\t\t\t<system value=\"http://snomed.info/sct\"/>\n\t\t\t<version value=\"1\"/>\n\t\t\t<code value=\"734163000\"/>\n\t\t\t<display value=\"Care plan\"/>\n\t\t\t<userSelected value=\"true\"/>\n\t\t</coding>\n\t\t<text value=\"Some pertinent text\"/>\n\t</class>\n\t<subject>\n\t\t<reference value=\"https://demographics.spineservices.nhs.uk/STU3/Patient/9995000784\"/>\n\t</subject>\n\t<created value=\"2016-03-08T15:26:00+01:00\"/>\n\t<indexed value=\"2016-03-08T15:26:01+01:00\"/>\n\t<author>\n\t\t<reference value=\"https://directory.spineservices.nhs.uk/STU3/Organization/TESTV349\"/>\n\t</author>\n\t<custodian>\n\t\t<reference value=\"https://directory.spineservices.nhs.uk/STU3/Organization/SCRA01\"/>\n\t</custodian>\n\t<content>\n\t\t<attachment>\n\t\t\t<contentType value=\"application/pdf\"/>\n\t\t\t<url value=\"https://spine-proxy.national.ncrs.nhs.uk/p1.nhs.uk/MentalhealthCarePlanReportRGD.pdf\"/>\n\t\t\t<title value=\"Mental health Care Plan Report\"/>\n\t\t\t<creation value=\"2016-03-08T15:26:00+01:00\"/>\n\t\t</attachment>\n\t\t<format>\n\t\t\t<system value=\"https://fhir.nhs.uk/STU3/CodeSystem/NRL-FormatCode-1\"/>\n\t\t\t<code value=\"urn:nhs-ic:unstructured\"/>\n\t\t\t<display value=\"Unstructured Document\"/>\n\t\t</format>\n\t\t<extension url=\"https://fhir.nhs.uk/STU3/StructureDefinition/Extension-NRL-ContentStability-1\">\n\t\t\t<valueCodeableConcept>\n\t\t\t\t<coding>\n\t\t\t\t\t<system value=\"https://fhir.nhs.uk/STU3/CodeSystem/NRL-ContentStability-1\"/>\n\t\t\t\t\t<code value=\"dynamic\"/>\n\t\t\t\t\t<display value=\"Dynamic\"/>\n\t\t\t\t</coding>\n\t\t\t</valueCodeableConcept>\n\t\t</extension>\n\t</content>\n\t<content>\n\t\t<attachment>\n\t\t\t<contentType value=\"text/html\"/>\n\t\t\t<url value=\"https://spine-proxy.national.ncrs.nhs.uk/p1.nhs.uk/MentalhealthCarePlanReportRGD.html\"/>\n\t\t\t<title value=\"Mental health Care Plan Report\"/>\n\t\t\t<creation value=\"2016-03-08T15:26:00+01:00\"/>\n\t\t</attachment>\n\t\t<format>\n\t\t\t<system value=\"https://fhir.nhs.uk/STU3/CodeSystem/NRL-FormatCode-1\"/>\n\t\t\t<code value=\"urn:nhs-ic:record-contact\"/>\n\t\t\t<display value=\"Contact details (HTTP Unsecured)\"/>\n\t\t</format>\n\t\t<extension url=\"https://fhir.nhs.uk/STU3/StructureDefinition/Extension-NRL-ContentStability-1\">\n\t\t\t<valueCodeableConcept>\n\t\t\t\t<coding>\n\t\t\t\t\t<system value=\"https://fhir.nhs.uk/STU3/CodeSystem/NRL-ContentStability-1\"/>\n\t\t\t\t\t<code value=\"dynamic\"/>\n\t\t\t\t\t<display value=\"Dynamic\"/>\n\t\t\t\t</coding>\n\t\t\t</valueCodeableConcept>\n\t\t</extension>\n\t</content>\n\t<context>\n\t\t<practiceSetting>\n\t\t\t<coding>\n\t\t\t\t<system value=\"http://snomed.info/sct\"/>\n\t\t\t\t<code value=\"310167005\"/>\n\t\t\t\t<display value=\"Urology service\"/>\n\t\t\t</coding>\n\t\t\t<text value=\"Some pertinent text\"/>\n\t\t</practiceSetting>\n\t</context>\n</DocumentReference>",
+					"raw": "",
 					"options": {
 						"raw": {
 							"language": "xml"
@@ -167,7 +167,7 @@
 					}
 				},
 				"url": {
-					"raw": "https://bs32.devspineservices.nhs.uk/DocumentReference/7bb6a34d-5c8b-11ea-86d2-20677cd36acd-5855464438423655435a",
+					"raw": "https://bs32.devspineservices.nhs.uk/DocumentReference/",
 					"protocol": "https",
 					"host": [
 						"bs32",
@@ -177,39 +177,7 @@
 					],
 					"path": [
 						"DocumentReference",
-						"7bb6a34d-5c8b-11ea-86d2-20677cd36acd-5855464438423655435a"
-					]
-				}
-			},
-			"response": []
-		},
-		{
-			"name": "SSP - Retrieve Document",
-			"request": {
-				"auth": {
-					"type": "bearer",
-					"bearer": [
-						{
-							"key": "token",
-							"value": "eyJhbGciOiJub25lIiwidHlwIjoiSldUIn0.eyJzdWIiOiAiaHR0cHM6Ly9maGlyLm5ocy51ay9JZC9zZHMtcm9sZS1wcm9maWxlLWlkfDk3OTYwMzYyNTUxMyIsICJpc3MiOiAiaHR0cHM6Ly9kZW1vbnN0cmF0b3IuY29tIiwgInJlcXVlc3Rpbmdfc3lzdGVtIjogImh0dHBzOi8vZmhpci5uaHMudWsvSWQvYWNjcmVkaXRlZC1zeXN0ZW18MDc1ODgzNzUwNTQxIiwgInJlcXVlc3RpbmdfdXNlciI6ICJodHRwczovL2ZoaXIubmhzLnVrL0lkL3Nkcy1yb2xlLXByb2ZpbGUtaWR8OTc5NjAzNjI1NTEzIiwgInJlcXVlc3Rpbmdfb3JnYW5pemF0aW9uIjogImh0dHBzOi8vZmhpci5uaHMudWsvSWQvb2RzLW9yZ2FuaXphdGlvbi1jb2RlfFNDUkEwMSIsICJleHAiOiAxNTYyMjUzNTM1LCAiaWF0IjogMTU2MjI1MzIzNSwgInJlYXNvbl9mb3JfcmVxdWVzdCI6ICJkaXJlY3RjYXJlIiwgInNjb3BlIjogInBhdGllbnQvRG9jdW1lbnRSZWZlcmVuY2UucmVhZCIsICJhdWQiOiAiaHR0cHM6Ly9ucmxzLmNvbS9maGlyL2RvY3VtZW50cmVmZXJlbmNlIn0K.",
-							"type": "string"
-						}
-					]
-				},
-				"method": "GET",
-				"header": [],
-				"url": {
-					"raw": "https://server.cfh.nhs.uk:18061/index.html",
-					"protocol": "https",
-					"host": [
-						"server",
-						"cfh",
-						"nhs",
-						"uk"
-					],
-					"port": "18061",
-					"path": [
-						"index.html"
+						""
 					]
 				}
 			},
