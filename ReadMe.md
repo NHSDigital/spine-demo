@@ -12,42 +12,30 @@ Setting Up
  
 3. Launch Postman and click on the **Settings** icon (the wrench in the top right corner). Make sure **SSL certificate verification** is turned **OFF**. 
 4.	On Postman click the import button (top left) and import **NRL.postman_collection.json file** from the repository. You should see an NRL folder on the left sidebar.
-5.	Go to the NHS number spreadsheet(https://docs.google.com/spreadsheets/d/1jzXrC_5nWPcoq5n5fhU4qPk-nFtUT9-VIvK-rjW_t2c/edit?usp=sharing). Select your NHS number to use. Copy this somewhere safe and put Y if you’re using it.
+5.	Go to the NHS number spreadsheet(https://docs.google.com/spreadsheets/d/1jzXrC_5nWPcoq5n5fhU4qPk-nFtUT9-VIvK-rjW_t2c/edit?usp=sharing). Select your test NHS number to use. Copy this somewhere safe and put Y if you’re using it.
 
 **NOTE: Certificate checks have been removed from the server to allow simpler workshop access.**
 
 Create a pointer
 ----------------
 1.	Go to the NRL collection folder in Postman and select the **POST – Create Pointer**.
-2.	Everything has been configured for you apart from the request body. Switch to the **Body** view (this is just under the POST url field) and click the **raw** radio button. This should be empty and will need adding to.
-3.	Choose to use either nrl_create_pointer.xml or the nrl_create_pointer.json template as your request body. Edit the template to use your chosen NHS number in the Subject -> Reference URL value. 
-4. Edit the template to include the type of document for your pointer. Look at type -> coding -> code/display and add one of the below
-code/display values:
-   
-- "code": "736253002"
-   "description": "Mental health crisis plan"
-      
-- "code": "736253003",
-   "description": "Mental health report",
- 
-- "code": "736253004",
-  "description": "Maternity record",
- 
--	"code": "736253005",
-   "description": "Child health plan",
- 
--	"code": "736253006",
-   "description": "Cancer treatment plan",
- 
--	"code": "736253007",
-   "description": "Diabetes treatment plan",
- 
--	"code": "736253008",
-   "description": "Urgent care plan",
+2.	Everything has been configured for you apart from the request body. Switch to the **Body** view (this is just under the POST URL field) and click the **raw** radio button. This should be empty and will need adding to in the next steps.
+3.	As this is a FHIR API you can choose to use either **nrl_create_pointer.xml** or the **nrl_create_pointer.json** template as your request body. This is from the repo you downloaded. Edit the template to use your chosen NHS number in the Subject -> Reference URL value. The URL value should look something like "https://demographics.spineservices.nhs.uk/STU3/Patient/{your test NHS number}".
+4. Continue to edit the template to include the type of document for your pointer. Look at type -> coding -> code/display values and add one of the below code/display values:
 
-5. Copy and paste your edited template into the request Body for your POST. Make sure you select the dropdown type to either **XML or JSON** depending on your template.
+| Code | Display |
+| :-------: | :-------: |
+| 736253002 | Mental health crisis plan |
+| 736253003 | Mental health report |
+| 736253004 | Maternity record |
+| 736253005 | Child health plan |
+| 736253006 | Cancer treatment plan |
+| 736253007 | Diabetes treatment plan |
+| 736253008 | Urgent care plan |
 
-6. Change the ending of the POST URL in Postman to use your NHS number you copied earlier e.g. /Patient/{Your Test NHS Number} and press Send. Check the response outcome to see if the diagnostic value says "Successfully created resource DocumentReference". If you get this then congratulations you have created your NRL pointer! Now you can try to retrive those pointer details or delete it next.
+5. Copy and paste your edited template into the request body for your POST. Make sure you select the dropdown type to either **XML or JSON** depending on your template.
+
+6. Press Send. Check the response outcome to see if the diagnostic value says **"Successfully created resource DocumentReference"**. If you get this then congratulations you have created your NRL pointer! Now you can try to retrive those pointer details or delete it next.
 
 If you don't get this response please double check your request body and try again. Incorrect spelling or extra spaces could be your issue. Feel free to ask for help or to ask any questions. 
 
