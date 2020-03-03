@@ -1,6 +1,6 @@
 {
 	"info": {
-		"_postman_id": "6c3d6859-689c-442b-a2cc-0044e3b8f380",
+		"_postman_id": "f90d0509-1147-423e-b78d-bcabb6a71bd3",
 		"name": "NRL",
 		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
 	},
@@ -167,7 +167,7 @@
 					}
 				},
 				"url": {
-					"raw": "https://bs32.devspineservices.nhs.uk:443/DocumentReference/",
+					"raw": "https://bs32.devspineservices.nhs.uk/DocumentReference/",
 					"protocol": "https",
 					"host": [
 						"bs32",
@@ -175,7 +175,6 @@
 						"nhs",
 						"uk"
 					],
-					"port": "443",
 					"path": [
 						"DocumentReference",
 						""
