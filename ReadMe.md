@@ -49,7 +49,7 @@ code/display values:
 
 6. Change the ending of the POST URL in Postman to use your NHS number you copied earlier e.g. /Patient/{Your Test NHS Number} and press Send. Check the response outcome to see if the diagnostic value says "Successfully created resource DocumentReference". If you get this then congratulations you have created your NRL pointer! Now you can try to retrive those pointer details or delete it next.
 
-If you don't get this response please double check your request body and try again. Feel free to ask for help or to ask any questions. 
+If you don't get this response please double check your request body and try again. Incorrect spelling or extra spaces could be your issue. Feel free to ask for help or to ask any questions. 
 
 Retrieve a pointer
 ------------------
